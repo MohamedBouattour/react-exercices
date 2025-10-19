@@ -1,7 +1,7 @@
 import './App.css'
-import { Counter } from './compoents/Counter'
-import { ProfileCard } from './compoents/ProfileCard'
-import { TabMax } from './compoents/TabMax'
+import { Counter } from './components/Counter'
+import { ProfileCard } from './components/ProfileCard'
+import { TabMax } from './components/TabMax'
 const users = [
   {
     name:'MED',
