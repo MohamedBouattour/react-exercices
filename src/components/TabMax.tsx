@@ -22,7 +22,7 @@ export const TabMax =()=> {
     };
   
     return (
-      <div style={{ fontFamily: "sans-serif", padding: "20px" }}>
+      <>
         <h2>Tableau d’entiers</h2>
   
         {/* Input + Bouton */}
@@ -49,7 +49,7 @@ export const TabMax =()=> {
         <p>
           <strong>Plus grand nombre :</strong> {max !== null ? max : "—"}
         </p>
-      </div>
+      </>
     )
 }
         
