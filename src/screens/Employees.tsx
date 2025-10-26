@@ -5,7 +5,7 @@ export const Employees = () => {
   const [employee, setEmployee] = useState({
     name: '',
     birthday: '',
-    job: '',
+    job: 'Developer',
   });
 
   const handleFormUpdate = (e: any) => {
