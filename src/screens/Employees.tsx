@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { EmployeesList } from '../components/EmployeesList';
 
+import styles from '../styles/buttons.module.css'
+
 export const Employees = () => {
   const [employee, setEmployee] = useState({
     name: '',
@@ -30,6 +32,7 @@ export const Employees = () => {
           type="text"
           value={employee.name}
           onChange={handleFormUpdate}
+          className="inputStyle"
         />
         <br />
         <label>Birthday </label>
@@ -38,17 +41,19 @@ export const Employees = () => {
           type="date"
           value={employee.birthday}
           onChange={handleFormUpdate}
+          className="inputStyle"
         />
         <br />
         <label>Job </label>
-        <select name="job" value={employee.job} onChange={handleFormUpdate}>
+        <select className="inputStyle" name="job" value={employee.job} onChange={handleFormUpdate}>
           <option>Developer</option>
           <option>QA Tester</option>
         </select>
         <br />
       </form>
-      <button onClick={handleSaveEmployee}> Save </button>
-      <EmployeesList dataList={list} />
+      <button className={styles.primary}  onClick={handleSaveEmployee}> Save </button>
+      {/* Condition  ? when ture  : when false */}
+      {list.length ? <EmployeesList dataList={list} />:''}
     </>
   );
 };

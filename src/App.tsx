@@ -1,7 +1,4 @@
 import './App.css'
-import { Counter } from './components/Counter'
-import { ProfileCard } from './components/ProfileCard'
-import { TabMax } from './components/TabMax'
 import { Employees } from './screens/Employees'
 const users = [
   {
