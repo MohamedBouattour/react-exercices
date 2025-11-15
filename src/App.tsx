@@ -1,5 +1,6 @@
 import './App.css'
 import { Employees } from './screens/Employees'
+import RegistrationForm from './screens/RegistrationForm/RegistrationForm'
 const users = [
   {
     name:'MED',
@@ -18,8 +19,7 @@ function App() {
 
   return (
     <>
-    <Employees></Employees>
-    
+    <RegistrationForm></RegistrationForm>  
     </>
   )
 }

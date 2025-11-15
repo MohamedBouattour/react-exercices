@@ -1,0 +1,116 @@
+.container {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  }
+  
+  .container h2 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .formGroup {
+    margin-bottom: 25px;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .formGroup input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #2d3748;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    font-weight: 500;
+  }
+  
+  /* Style du placeholder */
+  .formGroup input::placeholder {
+    color: #a0aec0;
+    opacity: 1;
+    font-weight: 400;
+  }
+  
+  .formGroup input:focus {
+    outline: none;
+    background: white;
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  /* Bordure verte pour champ valide */
+  .valid {
+    border-color: #4caf50 !important;
+    background: #f1f8f4 !important;
+    color: #1a472a !important;
+  }
+  
+  .valid:focus {
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important;
+  }
+  
+  /* Bordure rouge pour champ invalide */
+  .invalid {
+    border-color: #ff6b6b !important;
+    background: #fff5f5 !important;
+    color: #7f1d1d !important;
+  }
+  
+  .invalid:focus {
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3) !important;
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-color: white;
+    color: #667eea;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Effet au survol */
+  .submitButton:hover:not(:disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    background: white;
+  }
+  
+  /* Bouton désactivé */
+  .submitButton:disabled {
+    background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.6);
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
+  
