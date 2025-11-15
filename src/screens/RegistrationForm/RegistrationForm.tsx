@@ -72,6 +72,9 @@ function RegistrationForm() {
   // Vérifier si le formulaire est valide
   const isFormValid = (): boolean => {
     return (
+      formData.nom !=='' &&
+      formData.email!==''&&
+      formData.motDePasse!==''&&
       Object.keys(errors).length === 0
     );
   };
